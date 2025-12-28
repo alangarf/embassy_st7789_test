@@ -52,7 +52,7 @@ Key dependencies include:
 - `embassy-stm32`: STM32 HAL with async support
 - `embassy-executor`: Async task executor
 - `embassy-time`: Time and delay utilities
-- `mipidsi`: Display driver for MIPI DSI displays
+- `mipidsi`: Display driver for MIPI DBI/SPI displays
 - `embedded-graphics`: 2D graphics library
 - `defmt`: Efficient logging for embedded systems
 
