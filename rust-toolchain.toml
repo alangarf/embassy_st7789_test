@@ -1,0 +1,7 @@
+[toolchain]
+# Use the stable version you just updated to
+channel = "stable"
+# Ensure the ARM Cortex-M4 target is always installed
+targets = ["thumbv7em-none-eabihf"]
+# Optional: include rust-src if you need to debug core libraries
+components = ["rust-src", "rustfmt"]
