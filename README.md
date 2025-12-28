@@ -8,7 +8,6 @@ This project displays a simple counter on a 240x240 ST7789 LCD screen, increment
 - Async embedded Rust programming with Embassy
 - SPI communication with DMA for high-performance display updates
 - Graphics rendering using the `embedded-graphics` and `mipidsi` libraries
-- Custom display initialization with gamma correction settings
 - Real-time logging with `defmt`
 
 ## Hardware Requirements
@@ -37,11 +36,6 @@ This project displays a simple counter on a 240x240 ST7789 LCD screen, increment
 ## Features
 
 - **High-Performance Graphics**: Utilizes DMA-accelerated SPI for fast display updates
-- **Custom Display Tuning**: Includes register-level configuration for optimal ST7789 performance
-  - Porch control
-  - Gate control
-  - VCOM settings
-  - Gamma correction curves
 - **Professional Text Rendering**: Uses ProFont 24-point font
 - **Async/Await**: Built on Embassy's async executor for efficient resource usage
 - **Debug Logging**: Runtime debug information via defmt and RTT
@@ -113,7 +107,6 @@ The application will:
 ## Code Highlights
 
 - **Clock Configuration**: The STM32G431 is configured to run at 170 MHz using the PLL with HSE as source
-- **Display Initialization**: Custom register-level configuration for the ST7789 provides optimal color and performance
 - **Async Loop**: The main loop uses `embassy_time::Timer` for non-blocking 1-second delays
 - **Text Rendering**: Demonstrates using `embedded-graphics` with heap-less string formatting
 
